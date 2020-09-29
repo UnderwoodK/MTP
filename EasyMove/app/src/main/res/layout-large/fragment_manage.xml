@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/light"
+        android:lineSpacingExtra="4dp"
+        android:text="#422, Byucksan Digital Valley 2, 184, Gasan digital 2-ro, Geumcheon-gu, Seoul, Republic of Korea.\nTel. 02-830-4530\nE-mail. sales@mintrobot.com\nWeb. www.mintrobot.com\nCreated by Minsk.K \u0026 Underwood.K"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/btn_deleteAllJobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/medium"
+        android:text="Delete all jobs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/medium"
+        android:gravity="center|left"
+        android:text="MINTROBOT Co.,Ltd."
+        android:textColor="#FFFFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/btn_getReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/btn_deleteAllJobs"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteAllJobs" />
+
+    <Button
+        android:id="@+id/btn_unlimited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Unlimited"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_getReturn"
+        app:layout_constraintStart_toEndOf="@+id/btn_getReturn" />
+
+    <Button
+        android:id="@+id/btn_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Zero"
+        app:layout_constraintStart_toEndOf="@+id/btn_deleteAllJobs"
+        app:layout_constraintTop_toTopOf="@+id/btn_deleteAllJobs" />
+
+    <Button
+        android:id="@+id/btn_readyPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Ready Position"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_zero"
+        app:layout_constraintStart_toEndOf="@+id/btn_zero"
+        app:layout_constraintTop_toTopOf="@+id/btn_zero" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
